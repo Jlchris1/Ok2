@@ -1,0 +1,374 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() local Window = OrionLib:MakeWindow({Name = "JLhub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"}) local Tab = Window:MakeTab({
+    Name = "progress",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+}) local Section = Tab:AddSection({
+    Name = "lvls and rebirths"
+}) Tab:AddButton({
+    Name = "free 500m rebirths",
+    Callback = function()
+              
+local args = {
+    [1] = 99999999999999999999999999
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.ultraLift:InvokeServer(unpack(args))
+ 
+      end    
+}) Tab:AddButton({
+    Name = "loop 500m rebirths",
+    Callback = function()
+              while wait() do
+local args = {
+    [1] = 99999999999999999999999999
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.ultraLift:InvokeServer(unpack(args))
+end 
+      end    
+}) Tab:AddButton({
+    Name = "lvl up once",
+    Callback = function()
+              
+game:GetService("ReplicatedStorage").ReplicatedRemotes.levelUp:FireServer()
+
+      end    
+}) Tab:AddButton({
+    Name = "loop fast lvl",
+    Callback = function()
+              while wait() do
+game:GetService("ReplicatedStorage").ReplicatedRemotes.levelUp:FireServer()
+end
+      end    
+}) 
+ local Tab = Window:MakeTab({
+    Name = "eggoz",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+}) local Section = Tab:AddSection({
+    Name = "eggs"
+}) Tab:AddButton({
+    Name = "loop hatch basic egg",
+    Callback = function()
+              while wait() do 
+local args = {
+    [1] = "Basic",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+      end    
+}) Tab:AddButton({
+	Name = "loop hatch starter egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Starter",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch polka egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Polka",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch timber egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Timber",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch ancient egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Ancient",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch medieval egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Medieval",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch pirate egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Pirate",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch industrial egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Industrial",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch lake egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Lake",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch classic egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Classic",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch snow egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Snow",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch lava egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Lava",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch nuclear egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Nuclear",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch candy egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Candy",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch  desert egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Desert",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch slush egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Slush",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch ocean egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Ocean",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch icecream egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "IceCream",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch coconut egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Coconut",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch swamp egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Swamp",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch tech egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Tech",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch spring egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Spring",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch fantasy egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Fantasy",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch darkfantasy egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "DarkFantasy",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch inferno egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Inferno",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch galactic egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Galactic",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+}) Tab:AddButton({
+	Name = "loop hatch alien egg",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "Alien",
+    [2] = "Single"
+}
+
+game:GetService("ReplicatedStorage").ReplicatedRemotes.eggOpened:InvokeServer(unpack(args))
+end
+  	end    
+})
